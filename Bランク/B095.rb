@@ -25,15 +25,15 @@ c.times do
   (d/c).times do |n|
     if (interval[n] - subject[e]).abs <= 5 
     elsif (interval[n] - subject[e]).abs <= 10 && (interval[n] - subject[e]).abs >= 6 
-      score_2 = score_2 - 1
+      score_2 -= 1
     elsif (interval[n] - subject[e]).abs <= 20 && (interval[n] - subject[e]).abs >= 11
-      score_2 = score_2 - 2
+      score_2 -= 2
     elsif (interval[n] - subject[e]).abs <= 30 && (interval[n] - subject[e]).abs >= 21 
-      score_2 = score_2 - 3
+      score_2 -= 3
     else
-      score_2 = score_2 - 5
+      score_2 -= 5
     end
-    e = e + 1
+    e += 1
   end
   score.push(score_2)
 end
