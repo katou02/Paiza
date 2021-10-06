@@ -1,8 +1,8 @@
 N = gets.to_i
 M,A,B = gets.chomp.split(' ').map(&:to_i)
 
-if N <= M
+if N >= M
   puts N * A
 else
-  puts M * B
+  puts N * B
 end
