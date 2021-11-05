@@ -1,0 +1,1 @@
+puts S = gets.chomp.reverse
